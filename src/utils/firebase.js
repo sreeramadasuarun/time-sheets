@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDRw8cNOZcROESjeeFGhFiD0_hzPivdILs",
-  authDomain: "work-force-a7e80.firebaseapp.com",
-  projectId: "work-force-a7e80",
-  storageBucket: "work-force-a7e80.appspot.com",
-  messagingSenderId: "48531118393",
-  appId: "1:48531118393:web:b2e3bab7827670937030e8",
+  apiKey: "AIzaSyCkOrp8aDgTGUp1seoDU0m6c0kJ3PR_IKI",
+  authDomain: "time-sheets-8b5d3.firebaseapp.com",
+  projectId: "time-sheets-8b5d3",
+  storageBucket: "time-sheets-8b5d3.appspot.com",
+  messagingSenderId: "609468185864",
+  appId: "1:609468185864:web:8771963c5a286cabb6c0bd",
 };
 
 // Initialize Firebase

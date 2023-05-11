@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 const Profile = () => {
   const navigate = useNavigate();
 
-  const { user, show } = useUserAuth();
+  const { user, show, getData } = useUserAuth();
+  getData();
 
   return (
     <div className="relative mt-[3.8rem]">

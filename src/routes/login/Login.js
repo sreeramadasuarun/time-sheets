@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useUserAuth } from "../../routes/login/UserAuthContext";
+import { useUserAuth } from "./UserAuthContext";
 
 const Login = () => {
   const [email, setEmail] = useState("");

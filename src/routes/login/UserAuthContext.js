@@ -16,67 +16,66 @@ const userAuthContext = createContext();
 export function UserAuthContextProvider({ children }) {
   const [user, setUser] = useState({});
 
-  // const collectRef = collection(database, "users");
-  // // // const q = query(collectRef, where(id, "==", user.uid));
-  // // // console.log(user.uid);
-
-  // //push to firebase
-  // async function handleSubmit(
-  //   fullname,
-  //   companyName,
-  //   companyAddress,
-  //   skill,
-  //   permanentAddress,
-  //   about
-  // ) {
-  //   const docRef = await setDoc(doc(collectRef, user.uid), {
-  //     fullname: fullname,
-  //     companyName: companyName,
-  //     companyAddress: companyAddress,
-  //     skill: skill,
-  //     permanentAddress: permanentAddress,
-  //     about: about,
-  //   });
-
-  //   console.log("Document written with ID: ", docRef.id);
-  // }
-
-  // //.........  //pull from firebase
-
-  // // // const [show, setShow] = useState("");
-
-  // // const getData = () => {
-  // //   const docRef = doc(database, "users", user.uid);
-
-  // //   getDocs(docRef).then((response) => {
-  // //     console.log(
-  // //       response.docs.map((item) => {
-  // //         return { ...item.data(), id: item.id };
-  // //       })
-  // //     );
-  // //   });
-  // // };
-
+  const collectRef = collection(database, "users");
+  // // const q = query(collectRef, where(id, "==", user.uid));
   // // console.log(user.uid);
-  // // getData();
-  // // useEffect(() => {}, []);
 
-  // //.........  //pull from firebase
+  //push to firebase
+  async function handleSubmit(
+    fullname,
+    companyName,
+    companyAddress,
+    skill,
+    permanentAddress,
+    about
+  ) {
+    const docRef = await setDoc(doc(collectRef, user.uid), {
+      fullname: fullname,
+      companyName: companyName,
+      companyAddress: companyAddress,
+      skill: skill,
+      permanentAddress: permanentAddress,
+      about: about,
+    });
 
-  // const [show, setShow] = useState("");
+    console.log("Document written with ID: ", docRef.id);
+  }
 
-  // async function getData() {
+  //.........  //pull from firebase
+
+  // // const [show, setShow] = useState("");
+
+  // const getData = () => {
   //   const docRef = doc(database, "users", user.uid);
-  //   const docSnap = await getDoc(docRef);
-  //   setShow(docSnap.data());
-  //   // console.log("Document data:", docSnap.data());
-  // }
 
+  //   getDocs(docRef).then((response) => {
+  //     console.log(
+  //       response.docs.map((item) => {
+  //         return { ...item.data(), id: item.id };
+  //       })
+  //     );
+  //   });
+  // };
+
+  // console.log(user.uid);
   // getData();
-  // useEffect(() => {
-  //   setInterval(() => {
-  //   }, 1500);
-  // }, []);
+  // useEffect(() => {}, []);
+
+  //.........  //pull from firebase
+
+  const [show, setShow] = useState("");
+
+  async function getData() {
+    const docRef = doc(database, "users", user.uid);
+    const docSnap = await getDoc(docRef);
+    setShow(docSnap.data());
+    // console.log("Document data:", docSnap.data());
+  }
+
+  getData();
+  useEffect(() => {
+    setInterval(() => {}, 1500);
+  }, []);
 
   // .................................
   function logIn(email, password) {
@@ -114,9 +113,9 @@ export function UserAuthContextProvider({ children }) {
   return (
     <userAuthContext.Provider
       value={{
-        // getData,
-        // show,
-        // handleSubmit,
+        getData,
+        show,
+        handleSubmit,
         user,
         logIn,
         signUp,
