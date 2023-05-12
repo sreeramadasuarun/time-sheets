@@ -53,13 +53,13 @@ const Login = () => {
             />
           </form>
 
-          <p className="w-full mt-4 text-sm text-center text-gray-500">
+          {/* <p className="w-full mt-4 text-sm text-center text-gray-500">
             Don't have an account?{" "}
             <NavLink to="/signup" className="text-blue-500 underline">
               Sign up here
             </NavLink>
             {error && <p className="text-red-500 font-bold mt-4">{error}</p>}
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
