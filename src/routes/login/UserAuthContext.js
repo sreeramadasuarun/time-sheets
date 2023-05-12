@@ -9,8 +9,7 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { auth, database } from "../../utils/firebase";
-// import { collection, setDoc, getDocs, doc, getDoc } from "firebase/firestore";
-import { collection, setDoc, doc, getDoc } from "firebase/firestore";
+import { collection, setDoc, getDocs, doc, getDoc } from "firebase/firestore";
 
 const userAuthContext = createContext();
 
@@ -75,7 +74,8 @@ export function UserAuthContextProvider({ children }) {
 
   getData();
   // useEffect(() => {
-  //   setInterval(() => {}, 1500);
+  //   setInterval(() => {
+  //   }, 1500);
   // }, []);
 
   // .................................
