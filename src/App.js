@@ -1,10 +1,9 @@
 import React from "react";
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./navbar/navLink.js";
 import Login from "./routes/login/login.js";
 import Logout from "./routes/login/logout";
 import Profile from "./routes/profile";
-import Signup from "./routes/signup";
 
 // import Login from "../src/routes/login/Login.js";
 // import Logout from "../src/routes/login/Logout.js";

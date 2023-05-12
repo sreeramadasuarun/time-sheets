@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { useUserAuth } from "../routes/login/UserAuthContext";
 import userpic from "../assets/images/userpic.avif";
@@ -9,8 +9,6 @@ const Navbar = () => {
   const { user, show, getData, logOut } = useUserAuth();
   getData();
   const navigate = useNavigate();
-
-  const data = useUserAuth();
 
   // console.log(data);
   //logout
@@ -93,7 +91,7 @@ const Navbar = () => {
                       to="/teamleader"
                       className="relative tracking-widest	 flex items-center space-x-4 rounded-xl text-gray-600 hover:text-white hover:bg-gradient-to-r from-sky-600 to-cyan-400 py-5 px-3"
                     >
-                      <VscArchive />
+                      <VscGear />
                       <span className="font-semibold ml-5">Team Leaders</span>
                     </NavLink>
                   </>

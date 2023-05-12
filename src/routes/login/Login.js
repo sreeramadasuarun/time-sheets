@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useUserAuth } from "./UserAuthContext";
 
@@ -58,8 +58,8 @@ const Login = () => {
             <NavLink to="/signup" className="text-blue-500 underline">
               Sign up here
             </NavLink>
-            {error && <p className="text-red-500 font-bold mt-4">{error}</p>}
           </p> */}
+          {error && <p className="text-red-500 font-bold mt-4">{error}</p>}
         </div>
       </div>
     </div>
