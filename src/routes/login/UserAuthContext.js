@@ -73,9 +73,9 @@ export function UserAuthContextProvider({ children }) {
   }
 
   getData();
-  useEffect(() => {
-    setInterval(() => {}, 1500);
-  }, []);
+  // useEffect(() => {
+  //   setInterval(() => {}, 1500);
+  // }, []);
 
   // .................................
   function logIn(email, password) {

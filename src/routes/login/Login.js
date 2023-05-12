@@ -16,29 +16,16 @@ const Login = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/");
+
+      navigate("/formsdetails");
     } catch (err) {
       setError(err.message);
     }
   };
 
   return (
-    <div className="h-screen md:flex">
-      <div className="relative overflow-hidden md:flex w-1/2 bg-gradient-to-r from-rose-400 to-red-500 i justify-around items-center hidden">
-        <div className="text-left">
-          <h1 className="text-white font-bold text-[1rem] font-sans">
-            WHY CHOOSE US
-          </h1>
-          <p className="text-zinc-200 text-[2.7rem] 	 font-thin	 mt-3 w-[30rem]">
-            We provide truly prominent solutions for your success
-          </p>
-        </div>
-        <div className="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
-        <div className="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
-        <div className="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
-        <div className="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
-      </div>
-      <div className="flex md:w-1/2 justify-center py-10 items-center bg-white">
+    <div className="h-screen md:flex justify-center items-center">
+      <div className="flex md:w-1/2 justify-center  items-center bg-white">
         <div className="flex flex-col gap-4 z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 shadow-2xl px-7 rounded-none">
           <h3 className="mb-6 text-2xl font-medium text-center">
             Sign in your Account

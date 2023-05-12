@@ -28,10 +28,10 @@ const Forms = () => {
   };
 
   return (
-    <div className="mt-[2.3rem]">
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center ">
-        <div className="w-[92rem]">
-          <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+    <div className="mt-[2.3rem] relative">
+      <div className="absolute inset-y-0 right-0 w-[81rem] min-h-screen bg-gray-100 flex items-center justify-center ">
+        <div className="w-[72rem]">
+          <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6  w-[71rem] ">
             <div className="flex gap-10">
               <div className="text-white  w-[30rem] h-[33rem] bg-cover bg-hero-image2 flex flex-col justify-center items-center">
                 <p className="font-medium text-lg ">Personal Details</p>
