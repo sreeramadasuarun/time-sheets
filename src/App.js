@@ -5,16 +5,10 @@ import Login from "./routes/login/login.js";
 import Logout from "./routes/login/logout";
 import Profile from "./routes/profile";
 
-// import Login from "../src/routes/login/Login.js";
-// import Logout from "../src/routes/login/Logout.js";
-// import Profile from "../src/routes/profile.js";
-// import Signup from "../src/routes/signup.js";
-
 import Forms from "./routes/formsdetails";
 import { UserAuthContextProvider } from "./routes/login/UserAuthContext";
 import PrivateRoute from "./routes/login/PrivateRoute";
 import Employees from "./routes/employees.js";
-// import { useUserAuth } from "./routes/login/UserAuthContext.js";
 import Teamleader from "./routes/teamleader.js";
 
 function App() {

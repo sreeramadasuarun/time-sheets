@@ -61,7 +61,7 @@ const Navbar = () => {
                       <span className="font-semibold ml-5">Profile</span>
                     </NavLink>
                     <NavLink
-                      to="/profile"
+                      to="/employees"
                       className="relative tracking-widest	 flex items-center space-x-4 rounded-xl text-gray-600 hover:text-white hover:bg-gradient-to-r from-sky-600 to-cyan-400 py-5 px-3"
                     >
                       <VscArchive />
